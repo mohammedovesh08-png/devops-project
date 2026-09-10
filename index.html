@@ -1,38 +1,241 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azure DevOps CI/CD Project</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cbd5e1;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            color: #60a5fa;
+            margin-bottom: 10px;
+        }
+
+        .pipeline {
+            background: #111827;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #334155;
+        }
+
+        .pipeline span {
+            color: #60a5fa;
+            font-weight: bold;
+        }
+
+        .output {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .output img {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 12px;
+            border: 2px solid #334155;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 12px 22px;
+            margin: 8px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .buttons a:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .pipeline {
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Azure DevOps CI/CD Project</h1>
+    <section class="hero">
+        <h1>Azure DevOps CI/CD Project 🚀</h1>
+        <p>
+            End-to-End CI/CD Pipeline using GitHub, Azure DevOps,
+            Maven, Docker, Azure Container Registry and Azure Container Instances.
+        </p>
+    </section>
 
-    <h2>BoardGame Database Application</h2>
+    <div class="container">
 
-    <p>
-        End-to-End CI/CD Pipeline using GitHub, Azure DevOps,
-        Maven, Docker, Azure Container Registry and Azure Container Instances.
-    </p>
+        <h2 class="section-title">🎮 BoardGame Database Application</h2>
 
-    <h2>CI/CD Pipeline</h2>
+        <div class="card-grid">
 
-    <p>
-        GitHub → Azure DevOps → Maven Build & Test → Docker Build
-        → ACR → ACI → Application
-    </p>
+            <div class="card">
+                <h3>☕ Java</h3>
+                <p>Backend application developed using Java and Spring Boot.</p>
+            </div>
 
-    <h2>Technologies</h2>
+            <div class="card">
+                <h3>🔧 Maven</h3>
+                <p>Application build and automated testing.</p>
+            </div>
 
-    <p>
-        Java | Spring Boot | Maven | GitHub | Azure DevOps |
-        Docker | ACR | ACI
-    </p>
+            <div class="card">
+                <h3>🐳 Docker</h3>
+                <p>Application containerized using Docker.</p>
+            </div>
 
-    <h2>Pipeline Output</h2>
+            <div class="card">
+                <h3>☁️ Azure</h3>
+                <p>Container deployed using Azure Container Instances.</p>
+            </div>
 
-    <img src="azure-devops-cicd-output.png"
-         alt="Azure DevOps CI/CD Pipeline"
-         width="900">
+        </div>
+
+        <h2 class="section-title" style="margin-top:60px;">
+            🔄 CI/CD Pipeline
+        </h2>
+
+        <div class="pipeline">
+            GitHub
+            <span>→</span>
+            Azure DevOps
+            <span>→</span>
+            Maven Build & Test
+            <span>→</span>
+            Docker Build
+            <span>→</span>
+            ACR
+            <span>→</span>
+            ACI
+            <span>→</span>
+            Application
+        </div>
+
+        <h2 class="section-title" style="margin-top:60px;">
+            🛠️ Technologies Used
+        </h2>
+
+        <div class="card-grid">
+
+            <div class="card"><h3>Git & GitHub</h3></div>
+            <div class="card"><h3>Azure DevOps</h3></div>
+            <div class="card"><h3>Java / Spring Boot</h3></div>
+            <div class="card"><h3>Maven</h3></div>
+            <div class="card"><h3>Docker</h3></div>
+            <div class="card"><h3>Azure Container Registry</h3></div>
+            <div class="card"><h3>Azure Container Instances</h3></div>
+            <div class="card"><h3>CI/CD</h3></div>
+
+        </div>
+
+        <div class="output">
+
+            <h2 class="section-title">📊 Pipeline Output</h2>
+
+            <img src="azure-devops-cicd-output.png"
+                 alt="Azure DevOps CI/CD Pipeline Output">
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="https://github.com/mohammedovesh08-png/devops-project"
+               target="_blank">
+                GitHub Repository
+            </a>
+
+            <a href="https://dev.azure.com/mohammadovesh907"
+               target="_blank">
+                Azure DevOps
+            </a>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Created by Ovesh Mohammad | DevOps & Cloud Project</p>
+    </footer>
 
 </body>
 </html>
